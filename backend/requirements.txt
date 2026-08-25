@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+bcrypt
+requests
+python-dotenv
+scikit-learn
+numpy

@@ -1,4 +1,4 @@
-def calculate_risk(failed_attempts, new_ip, location_unknown,abuse_score):
+def calculate_risk(failed_attempts, new_ip, location_unknown, abuse_score):
 
     risk = 0
     factors = []
@@ -16,9 +16,6 @@ def calculate_risk(failed_attempts, new_ip, location_unknown,abuse_score):
             "reason": "High frequency login attempts",
             "score": 25
         })
-    
-    risk = 0
-    factors = []
 
     if abuse_score > 50:
         risk += 40

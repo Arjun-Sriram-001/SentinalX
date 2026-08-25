@@ -41,11 +41,10 @@ default_users = [
 for u,p in default_users:
     if not get_user(u):
         hashed = bcrypt.hashpw(
-        p.encode(),
-        bcrypt.gensalt()
-    ).decode()
-
-    add_user(u, hashed)
+            p.encode(),
+            bcrypt.gensalt()
+        ).decode()
+        add_user(u, hashed)
 
 # ---------------- SECURITY VARIABLES ----------------
 

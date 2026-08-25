@@ -48,7 +48,6 @@ def log_attempt(username, ip, location, status, risk_score, factors):
 
     conn.commit()
 
-    conn.commit()
 def get_logs():
     cursor.execute("SELECT * FROM login_logs ORDER BY risk_score DESC, timestamp DESC")
     return cursor.fetchall()
