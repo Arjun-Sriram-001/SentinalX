@@ -1,0 +1,31 @@
+ 
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+# database
+*.db
+*.sqlite3
+
+# environment variables
+.env
+
+# vscode
+.vscode/
+
+# logs
+*.log
+ 
+node_modules/
+
+dist/
+ 
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+ 
